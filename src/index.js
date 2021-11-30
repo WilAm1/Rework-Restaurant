@@ -1,16 +1,24 @@
-console.log('hello world');
+import homeContent from './home.js';
 
+const config = (() => {
+    const content = document.querySelector('#content');
+    const replaceContent = (newContent) => {
+        content.replaceChildren(newContent);
+    };
+    return {
+        replaceContent
+    }
+})();
 
-const config = {
-    content: document.querySelector('#content'),
-    home: document.querySelector('#home'),
-    menu: document.querySelector('#menu'),
-    contact: document.querySelector('#contact'),
-}
-
-const onLoad = function({ content, home, menu, contact }) {
-
+const onLoad = function({ replaceContent }) {
+    const homePage = homeContent();
+    replaceContent(homePage);
+    // replaceContent('hei')
+    const home = homePage.querySelector('#home');
+    home.textContent = 'hello';
+    const menu = homePage.querySelector('#menu');
+    const contact = homePage.querySelector('#contact');
 };
 
 
-document.onload = onLoad;
+window.onload = () => { onLoad(config) };
