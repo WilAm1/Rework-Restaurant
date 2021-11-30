@@ -1,24 +1,23 @@
 import homeContent from './home.js';
+import './styles.css';
 
-const config = (() => {
+
+const replaceContent = (newContent) => {
     const content = document.querySelector('#content');
-    const replaceContent = (newContent) => {
-        content.replaceChildren(newContent);
-    };
-    return {
-        replaceContent
-    }
-})();
+    content.replaceChildren(newContent);
+};
 
-const onLoad = function({ replaceContent }) {
-    const homePage = homeContent();
-    replaceContent(homePage);
-    // replaceContent('hei')
-    const home = homePage.querySelector('#home');
-    home.textContent = 'hello';
-    const menu = homePage.querySelector('#menu');
-    const contact = homePage.querySelector('#contact');
+const onLoad = function(div) {
+    replaceContent(div);
+    const home = div.querySelector('#home');
+    const menu = div.querySelector('#menu');
+    const contact = div.querySelector('#contact');
+    home.addEventListener('click', () => { onLoad(homeContent()) });
+    menu.addEventListener('click', () => { console.log('hel') });
+    contact.addEventListener('click', () => { onLoad(homeContent()) });
+
+
 };
 
 
-window.onload = () => { onLoad(config) };
+window.onload = () => { onLoad(homeContent()) };
