@@ -1,4 +1,7 @@
 import homeContent from './home.js';
+import menuContent from './menu.js';
+import aboutContent from './about.js';
+
 import './styles.css';
 
 
@@ -13,11 +16,9 @@ const onLoad = function(div) {
     const menu = div.querySelector('#menu');
     const contact = div.querySelector('#contact');
     home.addEventListener('click', () => { onLoad(homeContent()) });
-    menu.addEventListener('click', () => { console.log('hel') });
-    contact.addEventListener('click', () => { onLoad(homeContent()) });
-
-
+    menu.addEventListener('click', () => { onLoad(menuContent()) });
+    contact.addEventListener('click', () => { onLoad(aboutContent()) });
 };
 
 
-window.onload = () => { onLoad(homeContent()) };
+window.onload = () => { onLoad(menuContent()) };
