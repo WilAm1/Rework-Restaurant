@@ -32,4 +32,4 @@ const onLoad = function(div) {
 };
 
 
-window.onload = () => { onLoad(aboutContent()) };
+window.onload = () => { onLoad(homeContent()) };

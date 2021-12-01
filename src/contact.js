@@ -6,6 +6,11 @@ export default function() {
         <div id="contact-container">
             <p>📞 1123 123 96</p>
             <p>🏠 Hollywood Boulevard 42, Los Angeles, USA</p>
+            <div id="hours">
+            <h2>Hours</h2>
+            <p>Monday to Friday</p>
+            <p>8 AM - 10 PM</p>
+        </div>
         </div>
         <h3>Interested? Message Us</h3>
         <form action="#">
