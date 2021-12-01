@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700;900&display=swap');
 *,
 *::after,
 *::before {
@@ -7,12 +8,13 @@
 }
 
 body {
+    font-family: 'Rubik', sans-serif;
     padding-top: 4em;
     box-sizing: border-box;
     background-color: #FAFAFA;
     color: #f1e3cf;
     background-color: gainsboro;
-    background-image: url(../dist/images/background.jpg);
+    background-image: url(../dist/images/bg2.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center, top right, center center;
@@ -21,7 +23,7 @@ body {
 header {
     position: absolute;
     top: 0;
-    background-color: #ecb86a98;
+    background-color: #00000098;
     width: 100%;
     padding: 1.2em;
 }
@@ -31,6 +33,10 @@ nav ul {
     width: 90vw;
     margin: 0 auto;
     justify-content: space-evenly;
+}
+
+nav a {
+    color: #FAFAFA;
 }
 
 header li {
