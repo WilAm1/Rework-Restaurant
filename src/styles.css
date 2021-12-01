@@ -1,6 +1,35 @@
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    padding-top: 4em;
+    box-sizing: border-box;
     background-color: #FAFAFA;
     color: #E5890A;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    background-color: #E5890A;
+    width: 100%;
+    padding: 1.2em;
+}
+
+nav ul {
+    display: flex;
+    width: 90vw;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+header li {
+    list-style-type: none;
 }
 
 textarea {
