@@ -3,6 +3,10 @@ body {
     color: #E5890A;
 }
 
+textarea {
+    resize: none;
+}
+
 
 /* #9D5C0D
 #E5890A
