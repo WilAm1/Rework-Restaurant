@@ -10,13 +10,18 @@ body {
     padding-top: 4em;
     box-sizing: border-box;
     background-color: #FAFAFA;
-    color: #E5890A;
+    color: #f1e3cf;
+    background-color: gainsboro;
+    background-image: url(../dist/images/background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center, top right, center center;
 }
 
 header {
     position: absolute;
     top: 0;
-    background-color: #E5890A;
+    background-color: #ecb86a98;
     width: 100%;
     padding: 1.2em;
 }
@@ -34,6 +39,19 @@ header li {
 
 textarea {
     resize: none;
+}
+
+
+/* Home */
+
+#content>div {
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+}
+
+div#home {
+    background-color: #16010198;
 }
 
 
