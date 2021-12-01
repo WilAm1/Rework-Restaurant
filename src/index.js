@@ -4,7 +4,6 @@ import aboutContent from './about.js';
 
 import './styles.css';
 
-
 const replaceContent = (newContent) => {
     const content = document.querySelector('#content');
     content.replaceChildren(newContent);
