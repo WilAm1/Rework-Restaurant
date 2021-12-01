@@ -1,11 +1,13 @@
-const IMG_PATH = './images/Food/'
+const IMG_PATH = './images/Food/';
 
 const wrapDiv = (food, format) => {
     const imageFile = `${IMG_PATH}${food}.${format}`;
     const div = document.createElement('div');
     div.classList.add('food');
     div.innerHTML = `
-            <img id="${food}-img" src="${imageFile}">
+            <div class="food-img-container">
+                <img id="${food}-img" class="food-img" src="${imageFile}">
+            </div>
             <p>${food}</p>
     `;
     return div;
@@ -17,15 +19,15 @@ const dishList = ['deluxe', 'ham-and-cheese', 'meat-supreme', 'vegan'];
 
 export default function() {
     const div = document.createElement('div');
-    div.id = "home";
+    div.id = "menu";
     div.innerHTML = `
 
         <h2>Menu</h2>
+        <h3>Beverage</h3>
         <div id="beverage">
-            <h3>Beverage</h3>
         </div>
+        <h3>Main Menu</h3>
         <div id="main-menu">
-            <h3>Main Menu</h3>
         </div>
     `;
 
