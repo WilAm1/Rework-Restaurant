@@ -2,7 +2,6 @@ export default function() {
     const div = document.createElement('div');
     div.id = "home";
     div.innerHTML = `
-
         <h2>Serving Pizza for 5 years and counting</h2>
         <div id="contact-container">
             <p>📞 1123 123 96</p>

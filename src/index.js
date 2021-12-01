@@ -1,13 +1,8 @@
 import homeContent from './home.js';
 import menuContent from './menu.js';
 import aboutContent from './contact.js';
-
 import './styles.css';
 
-const replaceContent = (newContent) => {
-    const content = document.querySelector('#content');
-    content.replaceChildren(newContent);
-};
 const header = document.createElement('header');
 header.innerHTML = `
             <nav>
@@ -18,8 +13,13 @@ header.innerHTML = `
                 </ul>
             </nav>
 `;
+
 document.body.insertBefore(header, document.body.firstChild);
 
+const replaceContent = (newContent) => {
+    const content = document.querySelector('#content');
+    content.replaceChildren(newContent);
+};
 
 const onLoad = function(div) {
     replaceContent(div);
