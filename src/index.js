@@ -17,13 +17,15 @@ header.innerHTML = `
                     <li><a href="#" id="contact">Contact</a></li>
                 </ul>
             </nav>
-`
-    // document.body.insertBefore(header, document.body.firstChild);
+`;
+document.body.insertBefore(header, document.body.firstChild);
+
+
 const onLoad = function(div) {
     replaceContent(div);
-    const home = div.querySelector('#home');
-    const menu = div.querySelector('#menu');
-    const contact = div.querySelector('#contact');
+    const home = header.querySelector('#home');
+    const menu = header.querySelector('#menu');
+    const contact = header.querySelector('#contact');
     home.addEventListener('click', () => { onLoad(homeContent()) });
     menu.addEventListener('click', () => { onLoad(menuContent()) });
     contact.addEventListener('click', () => { onLoad(aboutContent()) });
