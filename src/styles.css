@@ -40,6 +40,11 @@ nav a {
     color: #FAFAFA;
 }
 
+nav a:hover {
+    color: #eea1a1;
+    text-decoration: none;
+}
+
 header li {
     list-style-type: none;
 }

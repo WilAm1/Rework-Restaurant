@@ -21,15 +21,12 @@ const replaceContent = (newContent) => {
     content.replaceChildren(newContent);
 };
 
-const onLoad = function(div) {
-    replaceContent(div);
+(function() {
+    replaceContent(homeContent());
     const home = header.querySelector('#home');
     const menu = header.querySelector('#menu');
     const contact = header.querySelector('#contact');
-    home.addEventListener('click', () => { onLoad(homeContent()) });
-    menu.addEventListener('click', () => { onLoad(menuContent()) });
-    contact.addEventListener('click', () => { onLoad(aboutContent()) });
-};
-
-
-window.onload = () => { onLoad(homeContent()) };
+    home.addEventListener('click', () => { replaceContent(homeContent()) });
+    menu.addEventListener('click', () => { replaceContent(menuContent()) });
+    contact.addEventListener('click', () => { replaceContent(aboutContent()) });
+})();
