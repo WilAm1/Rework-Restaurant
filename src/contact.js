@@ -15,13 +15,13 @@ export default function() {
         <h3>Interested? Message Us</h3>
         <form action="#">
             <div class="input-box">
-                <label for="name">Name</label><input type="text" id="name" required autofocus>
+                <label for="name">Name</label><input type="text" id="name" required autofocus placeholder="Marcus Aurelious">
             </div>
             <div class="input-box">
-                <label for="email">Email</label><input type="email" id="email" required>
+                <label for="email">Email</label><input type="email" id="email" required placeholder="sample@email.com">
             </div>
             <div class="input-box">
-                <label for="address">Address</label><input type="text" id="address" required>
+                <label for="address">Address</label><input type="text" id="address" required placeholder="Sunny Ville, Venice">
             </div>
             <div class="input-box">
                 <label for="message">Message</label>

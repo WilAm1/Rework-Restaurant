@@ -142,6 +142,24 @@ div #intro {
 }
 
 
+/* Form*/
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+form div {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+}
+
+form input {
+    text-align: center;
+}
+
+
 /* #9D5C0D
 #E5890A
 #F7D08A
