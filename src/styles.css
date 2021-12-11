@@ -13,7 +13,7 @@ body {
     box-sizing: border-box;
     background-color: #FAFAFA;
     color: #f1e3cf;
-    background-color: gainsboro;
+    background-color: #ee945fc7;
     background-image: url(../dist/images/bg2.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -112,6 +112,19 @@ div #intro {
 #menu #main-menu {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
+    width: 40%;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.food {
+    text-align: center;
+    /* background-color: #fafafa8a; */
+    flex: 1;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
 }
 
 .food .food-img-container {
