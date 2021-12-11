@@ -142,11 +142,26 @@ div #intro {
 }
 
 
+/* Contact */
+
+div#contact {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 50px;
+    padding: 50px 0;
+    font-size: 1.2em;
+}
+
+
 /* Form*/
 
 form {
     display: flex;
     flex-flow: column nowrap;
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
 }
 
 form div {
@@ -157,6 +172,20 @@ form div {
 
 form input {
     text-align: center;
+    background-color: transparent;
+    border: none;
+    color: #f1e3cf;
+    font-size: larger;
+    border-bottom: #f1e3cf 2px solid;
+}
+
+form button {
+    width: 100px;
+    height: 50px;
+    background-color: #ffae00;
+    color: #000000;
+    font-weight: 900;
+    border-radius: 20px;
 }
 
 

@@ -1,6 +1,6 @@
 export default function() {
     const div = document.createElement('div');
-    div.id = "home";
+    div.id = "contact";
     div.innerHTML = `
         <h2>Serving Pizza for 5 years and counting</h2>
         <div id="contact-container">
